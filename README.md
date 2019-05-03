@@ -18,4 +18,6 @@ In many cases (e.g. a rest service ), perform the login each time does not work.
 need a better solution. What can we use? The answer to this question is a set of advanced protocols: Kerberos, SAML
 2, OAuth2 or OpenId Connect.  .......
 
+<!---
 Click [here](https://technology.lastminute.com/oauth2-sso-with-spring-boot "Distributed authorization in Microservices with Spring") to read the post.
+-->
