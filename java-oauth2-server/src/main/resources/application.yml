@@ -1,0 +1,18 @@
+server:
+  servlet:
+    context-path: /auth
+  port: 9090
+  use-forward-headers: true
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:9090/auth/sign-key/public

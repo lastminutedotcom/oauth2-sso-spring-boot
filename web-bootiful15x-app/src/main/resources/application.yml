@@ -1,0 +1,26 @@
+server:
+  use-forward-headers: true
+  port: 8081
+  context-path: /bootifull-15-site
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+security:
+  oauth2:
+    client:
+      clientId: client
+      clientSecret: client-secret
+      accessTokenUri: http://localhost:9090/auth/oauth/token
+      userAuthorizationUri: http://localhost:9090/auth/oauth/authorize
+      auto-approve-scopes: '.*'
+      registered-redirect-uri: http://localhost:9090/auth/singin
+      clientAuthenticationScheme: form
+    resource:
+      jwk:
+        key-set-uri: http://localhost:9090/auth/sign-key/public
+management:
+  security:
+    enabled: false
