@@ -17,3 +17,5 @@ First of all, due to the nature of Microservices architecture, it is a bad idea 
 In many cases (e.g. a rest service ), perform the login each time does not work. We
 need a better solution. What can we use? The answer to this question is a set of advanced protocols: Kerberos, SAML
 2, OAuth2 or OpenId Connect.  .......
+
+Click [here](https://technology.lastminute.com/oauth2-sso-with-spring-boot "Distributed authorization in Microservices with Spring") to read the post.
